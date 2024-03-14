@@ -4,6 +4,6 @@ Para poder correr el script de python desde docker tenemos que crear un Dockerfi
 
 Creamos la imagen de Docker que contiene la configuración con el siguiente comando: *docker build -t myfirstpythonapp .*
 
-Con el comando *docker images* podemos lista las imágenes que tenemos disponibles
+Con el comando __*docker images*__ podemos lista las imágenes que tenemos disponibles
 
 Finalmente con el comando __*docker run myfirstpythonapp*__ podemos crear el contenedor que está corriendo la imagen de docker que hemos creado con anterioridad.
