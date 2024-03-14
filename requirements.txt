@@ -1,4 +1,5 @@
 uvicorn
+fastapi
 # scikit-learn
 # numpy
 # matplotlib
