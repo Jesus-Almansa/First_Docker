@@ -7,3 +7,5 @@ Creamos la imagen de Docker que contiene la configuración con el siguiente coma
 Con el comando __*docker images*__ podemos lista las imágenes que tenemos disponibles
 
 Finalmente con el comando __*docker run myfirstpythonapp*__ podemos crear el contenedor que está corriendo la imagen de docker que hemos creado con anterioridad.
+
+`docker build -t myfirstpythonapp .`
