@@ -1,18 +1,18 @@
 FROM python:3.11
 
 # Set working directory
-WORKDIR /app
+WORKDIR /Firs_Docker
 
-# Add Python scripts
-ADD LinealModels.py MNIST.py /app/
+COPY requirements.txt .
+COPY ./src ./src
 
 # Install dependencies
-RUN pip install --no-cache-dir \
-    scikit-learn \
-    numpy \
-    matplotlib \
-    pandas \
-    tensorflow
+RUN pip install -r requirements.txt --no-cache-dir 
+    # scikit-learn \
+    # numpy \
+    # matplotlib \
+    # pandas \
+    # tensorflow
 
 # Set the default command to execute when the container starts
-CMD ["python3", "./MNIST.py"]
+CMD ["python3", "./src/MNIST_tf.py"]

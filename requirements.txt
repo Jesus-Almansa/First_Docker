@@ -1,0 +1,8 @@
+uvicorn
+# scikit-learn
+# numpy
+# matplotlib
+# pandas
+tensorflow
+# torch
+# torchvision

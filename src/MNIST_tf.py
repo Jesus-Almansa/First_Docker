@@ -1,3 +1,4 @@
+import uvicorn
 import os
 os.environ['TF_CPP_MIN_LOG_LEVEL'] = '2'  # Suppress TensorFlow informational messages and warnings
 import tensorflow as tf
@@ -35,3 +36,5 @@ history = model.fit(x_train, y_train, epochs=10, batch_size=128, validation_spli
 # Evaluate the model
 test_loss, test_acc = model.evaluate(x_test, y_test)
 print('Test accuracy:', test_acc)
+
+
