@@ -1,12 +1,10 @@
-import uvicorn
-from fastapi import FastAPI
 import os
 os.environ['TF_CPP_MIN_LOG_LEVEL'] = '2'  # Suppress TensorFlow informational messages and warnings
 import tensorflow as tf
 from tensorflow.keras import layers, models
 from tensorflow.keras.datasets import mnist
 
-app = FastAPI()
+
 
 # Load the MNIST dataset
 (x_train, y_train), (x_test, y_test) = mnist.load_data()
@@ -41,4 +39,4 @@ test_loss, test_acc = model.evaluate(x_test, y_test)
 print('Test accuracy:', test_acc)
 
 if __name__ == "__main__":
-    uvicorn.run(app, port=8080, host="0.0.0.0")
+    pass
