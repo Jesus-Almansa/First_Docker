@@ -12,7 +12,6 @@ RUN pip install -r requirements.txt --no-cache-dir
     # numpy \
     # matplotlib \
     # pandas \
-    # tensorflow
 
 # Set the default command to execute when the container starts
 CMD ["python3", "./src/MNIST_tf.py"]
